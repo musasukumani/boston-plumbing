@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1B2F4E;
+  --ink: #1C1410;
+  --brick: #BF4E22;
+  --cream: #F5EFE6;
+  --gold: #E8A020;
+  --light-bg: #F5EFE6;
+  --brand-text: #1C1410;
+  --emergency: #D94F3D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--brand-text);
+  background: #FAFAF8;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+  background: #0F1C2E;
+  color: #e2e8f0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .fluid-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.1;
+  }
+  .fluid-subheading {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    line-height: 1.2;
+  }
+  .fluid-body {
+    font-size: clamp(0.95rem, 1.5vw, 1.125rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.diagonal-texture {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+}
