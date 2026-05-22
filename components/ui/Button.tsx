@@ -31,6 +31,7 @@ export default function Button({
     navy: 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',
     brick: 'bg-brick text-white hover:bg-brick/90 focus:ring-brick',
     ink: 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',
+    'dark-bg': 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',
     'outline-white': 'border-2 border-white/60 text-white hover:border-white hover:bg-white/10 focus:ring-white',
     'outline-navy': 'border-2 border-dark-bg text-dark-bg hover:bg-dark-bg hover:text-white focus:ring-dark-bg',
   }
