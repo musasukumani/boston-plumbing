@@ -12,11 +12,11 @@ const config: Config = {
       colors: {
         navy: '#1B2F4E',
         gold: '#E8A020',
-        ink: '#1C1410',
+        ink: '#0F1C2E',
         brick: '#BF4E22',
         cream: '#F5EFE6',
         'light-bg': '#F5EFE6',
-        'brand-text': '#1C1410',
+        'brand-text': '#0F1C2E',
         emergency: '#D94F3D',
         'dark-bg': '#0F1C2E',
         'dark-surface': '#162436',

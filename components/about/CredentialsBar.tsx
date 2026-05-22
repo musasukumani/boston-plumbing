@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 
@@ -13,7 +13,7 @@ function CheckIcon() {
 const credentials = [
   { text: 'MA Licensed Master Plumber (#BP-MA-00421)' },
   { text: 'Fully Insured & Bonded' },
-  { text: 'Google 4.9 — 500+ reviews' },
+  { text: 'Google 4.9 â€” 500+ reviews' },
   { text: 'BBB Accredited Business' },
   { text: 'EPA WaterSense Partner' },
 ]
@@ -33,7 +33,7 @@ export default function CredentialsBar() {
               className="flex items-center gap-2.5 bg-cream dark:bg-dark-surface border border-gray-200 dark:border-dark-border rounded-full px-5 py-2"
             >
               <CheckIcon />
-              <span className="text-ink dark:text-gray-300 font-medium text-sm">{cred.text}</span>
+              <span className="text-dark-bg dark:text-gray-300 font-medium text-sm">{cred.text}</span>
             </motion.div>
           ))}
         </div>

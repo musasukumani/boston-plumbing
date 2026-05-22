@@ -17,24 +17,21 @@ export default function HeroSection() {
     <section className="flex overflow-hidden" style={{ minHeight: '100vh' }}>
 
       {/* Left: text panel */}
-      <div
-        className="relative z-10 flex flex-col justify-center w-full lg:w-1/2 px-8 sm:px-14 lg:px-20 py-32"
-        style={{ backgroundColor: '#1C1410' }}
-      >
+      <div className="relative z-10 flex flex-col justify-center w-full lg:w-1/2 px-8 sm:px-14 lg:px-20 py-32 bg-cream dark:bg-dark-bg">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-white/50 text-xs font-semibold tracking-[0.2em] uppercase mb-8"
+          className="text-dark-bg/50 dark:text-white/50 text-xs font-semibold tracking-[0.2em] uppercase mb-8"
         >
-          Licensed &amp; Insured — Boston, MA
+          Licensed &amp; Insured &mdash; Boston, MA
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="font-display text-white mb-8"
+          className="font-display text-dark-bg dark:text-white mb-8"
           style={{ fontSize: 'clamp(3rem, 5vw, 5.5rem)', lineHeight: 1.0 }}
         >
           When a pipe<br />
@@ -45,7 +42,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.42 }}
-          className="text-white/70 mb-10"
+          className="text-dark-bg/70 dark:text-white/70 mb-10"
           style={{ fontSize: 'clamp(1rem, 1.4vw, 1.1rem)', maxWidth: '38ch', lineHeight: 1.75 }}
         >
           Same-day service across Boston. Upfront quotes, no surprises. Real plumbers available any hour.
@@ -66,17 +63,16 @@ export default function HeroSection() {
           </a>
           <Link
             href="/services"
-            className="inline-flex items-center justify-center border-2 border-white/50 text-white font-semibold text-base px-8 py-4 rounded-md hover:border-white hover:bg-white/10 transition-colors"
+            className="inline-flex items-center justify-center border-2 border-dark-bg/40 text-dark-bg dark:border-white/50 dark:text-white font-semibold text-base px-8 py-4 rounded-md hover:border-dark-bg dark:hover:border-white hover:bg-dark-bg/10 dark:hover:bg-white/10 transition-colors"
           >
             Our Services
           </Link>
         </motion.div>
 
-        {/* scroll indicator — anchored to bottom of text panel on desktop */}
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2.4, ease: 'easeInOut' }}
-          className="hidden lg:flex absolute bottom-8 left-20 text-white/35"
+          className="hidden lg:flex absolute bottom-8 left-20 text-dark-bg/35 dark:text-white/35"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
             <path d="M12 5v14M5 12l7 7 7-7" />

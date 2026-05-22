@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 
@@ -75,7 +75,7 @@ export default function TrustBar() {
               className="flex flex-col items-center text-center md:items-start md:text-left gap-1.5 md:px-8"
             >
               <span className="text-brick mb-1">{item.icon}</span>
-              <span className="font-bold text-ink dark:text-white text-base leading-tight">{item.label}</span>
+              <span className="font-bold text-dark-bg dark:text-white text-base leading-tight">{item.label}</span>
               <span className="text-gray-400 dark:text-gray-500 text-xs leading-snug">{item.sub}</span>
             </motion.div>
           ))}

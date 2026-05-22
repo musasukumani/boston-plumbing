@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 
@@ -24,7 +24,7 @@ export default function SectionHeading({
       className={`mb-12 ${centered ? 'text-center' : ''}`}
     >
       <h2
-        className={`font-display font-normal mb-4 ${light ? 'text-white' : 'text-ink dark:text-white'}`}
+        className={`font-display font-normal mb-4 ${light ? 'text-white' : 'text-dark-bg dark:text-white'}`}
         style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', lineHeight: 1.1 }}
       >
         {title}

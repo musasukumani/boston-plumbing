@@ -1,4 +1,4 @@
-function MapPinIcon() {
+﻿function MapPinIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -44,7 +44,7 @@ function ZapIcon() {
 export default function ContactInfo() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="rounded-xl p-8 text-white" style={{ backgroundColor: '#1C1410' }}>
+      <div className="rounded-xl p-8 text-white" style={{ backgroundColor: '#0F1C2E' }}>
         <h3 className="font-display font-normal text-xl mb-6">Contact Information</h3>
         <ul className="space-y-5 text-sm">
           <li className="flex items-start gap-4">
@@ -75,8 +75,8 @@ export default function ContactInfo() {
             <div>
               <div className="font-semibold mb-0.5">Hours</div>
               <div className="text-gray-400 space-y-1">
-                <div>Mon–Fri: 7:00am – 8:00pm</div>
-                <div>Saturday: 8:00am – 6:00pm</div>
+                <div>Monâ€“Fri: 7:00am â€“ 8:00pm</div>
+                <div>Saturday: 8:00am â€“ 6:00pm</div>
                 <div>Sunday: Emergency Only</div>
               </div>
             </div>

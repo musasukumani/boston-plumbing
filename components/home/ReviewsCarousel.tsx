@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
@@ -70,10 +70,10 @@ export default function ReviewsCarousel() {
             >
               <StarRating count={review.rating} />
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1">&ldquo;{review.quote}&rdquo;</p>
-              <div className="flex items-center justify-between pt-3 border-t border-ink/8 dark:border-dark-border">
+              <div className="flex items-center justify-between pt-3 border-t border-dark-bg/8 dark:border-dark-border">
                 <div>
-                  <span className="font-bold text-ink dark:text-white text-sm">{review.author}</span>
-                  <span className="text-gray-400 text-xs ml-1">— {review.neighborhood}</span>
+                  <span className="font-bold text-dark-bg dark:text-white text-sm">{review.author}</span>
+                  <span className="text-gray-400 text-xs ml-1">â€” {review.neighborhood}</span>
                 </div>
                 <div className="flex items-center gap-1 text-xs text-gray-400">
                   <GoogleIcon />

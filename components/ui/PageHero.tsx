@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 interface PageHeroProps {
   title: string
@@ -10,7 +10,7 @@ export default function PageHero({ title, subtitle, breadcrumb }: PageHeroProps)
   return (
     <section
       className="relative flex items-center diagonal-texture"
-      style={{ minHeight: 280, backgroundColor: '#1C1410' }}
+      style={{ minHeight: 280, backgroundColor: '#0F1C2E' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {breadcrumb && (

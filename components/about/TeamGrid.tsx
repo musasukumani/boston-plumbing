@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
@@ -62,7 +62,7 @@ export default function TeamGrid() {
                 />
               </div>
               <div className="p-5">
-                <h3 className="font-bold text-ink dark:text-white text-base mb-1">{member.name}</h3>
+                <h3 className="font-bold text-dark-bg dark:text-white text-base mb-1">{member.name}</h3>
                 <p className="text-brick text-xs font-semibold uppercase tracking-wide mb-3">{member.title}</p>
                 <p className="text-gray-500 text-sm">{member.bio}</p>
               </div>

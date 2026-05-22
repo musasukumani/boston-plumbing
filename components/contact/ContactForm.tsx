@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -203,7 +203,7 @@ export default function ContactForm() {
             className="mt-0.5 w-4 h-4 accent-emergency rounded"
           />
           <span className="text-sm text-gray-700">
-            <span className="font-semibold text-emergency">This is an emergency</span> — please call me ASAP
+            <span className="font-semibold text-emergency">This is an emergency</span> â€” please call me ASAP
           </span>
         </label>
 
@@ -224,7 +224,7 @@ export default function ContactForm() {
               Sending...
             </>
           ) : (
-            'Send Request →'
+            'Send Request â†’'
           )}
         </motion.button>
 
@@ -236,7 +236,7 @@ export default function ContactForm() {
 
         <p className="text-center text-sm text-gray-500">
           Or call us directly:{' '}
-          <a href="tel:6175550192" className="font-bold text-ink dark:text-white hover:text-brick transition-colors">
+          <a href="tel:6175550192" className="font-bold text-dark-bg dark:text-white hover:text-brick transition-colors">
             (617) 555-0192
           </a>
         </p>

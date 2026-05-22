@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 
@@ -70,7 +70,7 @@ export default function WhyUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.08 }}
-            className="font-display text-ink dark:text-white mb-14"
+            className="font-display text-dark-bg dark:text-white mb-14"
             style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', lineHeight: 1.1 }}
           >
             Built on three promises.
@@ -84,13 +84,13 @@ export default function WhyUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.12 }}
-                className="pt-8 border-t border-ink/10 dark:border-white/10"
+                className="pt-8 border-t border-dark-bg/10 dark:border-white/10"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <span className="text-brick mt-0.5">{r.icon}</span>
-                  <span className="font-display text-ink/20 dark:text-white/20 text-3xl leading-none">{r.num}</span>
+                  <span className="font-display text-dark-bg/20 dark:text-white/20 text-3xl leading-none">{r.num}</span>
                 </div>
-                <h3 className="font-bold text-ink dark:text-white text-lg mb-2">{r.title}</h3>
+                <h3 className="font-bold text-dark-bg dark:text-white text-lg mb-2">{r.title}</h3>
                 <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm">{r.desc}</p>
               </motion.div>
             ))}

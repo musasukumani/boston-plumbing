@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -58,7 +58,7 @@ export default function ServiceCard({ service, index }: ServiceCardProps) {
       className="bg-white dark:bg-dark-surface rounded-xl p-7 border border-gray-100 dark:border-dark-border flex flex-col"
     >
       <div className="mb-5">{iconMap[service.icon]}</div>
-      <h3 className="font-bold text-ink dark:text-white text-lg mb-2">{service.name}</h3>
+      <h3 className="font-bold text-dark-bg dark:text-white text-lg mb-2">{service.name}</h3>
       <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-5">{service.fullDesc}</p>
       <ul className="space-y-2 mb-7 flex-1">
         {service.bullets.map((b) => (

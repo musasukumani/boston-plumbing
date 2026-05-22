@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'framer-motion'
@@ -41,7 +41,7 @@ function Counter({ value, suffix, prefix = '' }: { value: number; suffix: string
   }, [inView, value])
 
   return (
-    <span ref={ref} className="font-display text-ink dark:text-white" style={{ fontSize: 'clamp(2.25rem, 5vw, 3.25rem)', lineHeight: 1 }}>
+    <span ref={ref} className="font-display text-dark-bg dark:text-white" style={{ fontSize: 'clamp(2.25rem, 5vw, 3.25rem)', lineHeight: 1 }}>
       {prefix}{count.toLocaleString()}{suffix}
     </span>
   )
@@ -55,7 +55,7 @@ export default function StatsCounter() {
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-2">
               <Counter value={stat.value} suffix={stat.suffix} prefix={stat.prefix} />
-              <span className="text-ink/40 dark:text-white/40 font-medium text-xs uppercase tracking-widest">{stat.label}</span>
+              <span className="text-dark-bg/40 dark:text-white/40 font-medium text-xs uppercase tracking-widest">{stat.label}</span>
             </div>
           ))}
         </div>

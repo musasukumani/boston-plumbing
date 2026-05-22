@@ -13,7 +13,7 @@ function PhoneIcon() {
 
 export default function CTABanner() {
   return (
-    <section className="py-20" style={{ backgroundColor: '#1C1410' }}>
+    <section className="py-20 bg-white dark:bg-dark-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -22,13 +22,13 @@ export default function CTABanner() {
           transition={{ duration: 0.5 }}
         >
           <h2
-            className="font-display font-normal text-white mb-4"
+            className="font-display font-normal text-dark-bg dark:text-white mb-4"
             style={{ fontSize: 'clamp(1.75rem, 4.5vw, 3rem)', lineHeight: 1.1 }}
           >
             Plumbing problem?<br />
             <em>We&apos;re on our way.</em>
           </h2>
-          <p className="text-white/50 mb-10" style={{ fontSize: '1.05rem' }}>
+          <p className="text-dark-bg/50 dark:text-white/50 mb-10" style={{ fontSize: '1.05rem' }}>
             Same-day appointments available. Call or book online.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -41,7 +41,7 @@ export default function CTABanner() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center border-2 border-white/30 text-white font-semibold text-base px-8 py-4 rounded-md hover:border-white/60 hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center border-2 border-dark-bg/30 text-dark-bg dark:border-white/30 dark:text-white font-semibold text-base px-8 py-4 rounded-md hover:border-dark-bg/60 dark:hover:border-white/60 hover:bg-dark-bg/5 dark:hover:bg-white/10 transition-colors"
             >
               Book Online
             </Link>

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -14,11 +14,15 @@ const navLinks = [
   { href: '/contact', label: 'Contact' },
 ]
 
-function WrenchIcon() {
+function BPBadge() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BF4E22" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-    </svg>
+    <span
+      className="inline-flex items-center justify-center w-8 h-8 rounded-sm flex-shrink-0"
+      style={{ backgroundColor: '#0F1C2E' }}
+      aria-hidden="true"
+    >
+      <span className="font-display font-normal text-sm leading-none" style={{ color: '#BF4E22' }}>BP</span>
+    </span>
   )
 }
 
@@ -49,14 +53,14 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 dark:bg-ink/98 backdrop-blur-md shadow-sm dark:shadow-black/20'
-          : 'bg-white dark:bg-ink/95'
+          ? 'bg-white/95 dark:bg-dark-bg/98 backdrop-blur-md shadow-sm dark:shadow-black/20'
+          : 'bg-white dark:bg-dark-bg/95'
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-          <WrenchIcon />
-          <span className="font-display font-normal text-ink dark:text-white" style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}>
+        <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
+          <BPBadge />
+          <span className="font-display font-normal text-dark-bg dark:text-white" style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)' }}>
             Boston Plumbing
           </span>
         </Link>
@@ -69,7 +73,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`text-sm font-semibold transition-colors relative pb-1 ${
-                    active ? 'text-ink dark:text-white' : 'text-gray-500 dark:text-gray-300 hover:text-ink dark:hover:text-white'
+                    active ? 'text-dark-bg dark:text-white' : 'text-gray-500 dark:text-gray-300 hover:text-dark-bg dark:hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -98,21 +102,21 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden p-2 text-ink dark:text-white cursor-pointer"
+          className="md:hidden p-2 text-dark-bg dark:text-white cursor-pointer"
           aria-label="Toggle menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
             <motion.span
               animate={menuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-              className="block h-0.5 bg-ink dark:bg-white rounded-full origin-center"
+              className="block h-0.5 bg-dark-bg dark:bg-white rounded-full origin-center"
             />
             <motion.span
               animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="block h-0.5 bg-ink dark:bg-white rounded-full"
+              className="block h-0.5 bg-dark-bg dark:bg-white rounded-full"
             />
             <motion.span
               animate={menuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-              className="block h-0.5 bg-ink dark:bg-white rounded-full origin-center"
+              className="block h-0.5 bg-dark-bg dark:bg-white rounded-full origin-center"
             />
           </div>
         </button>
@@ -125,7 +129,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden bg-white dark:bg-ink border-t border-gray-100 dark:border-dark-border overflow-hidden"
+            className="md:hidden bg-white dark:bg-dark-bg border-t border-gray-100 dark:border-dark-border overflow-hidden"
           >
             <ul className="flex flex-col py-4 px-6 gap-4">
               {navLinks.map((link) => {
@@ -137,7 +141,7 @@ export default function Navbar() {
                       className={`block text-base font-semibold py-1 transition-colors ${
                         active
                           ? 'text-brick'
-                          : 'text-gray-600 dark:text-gray-300 hover:text-ink dark:hover:text-white'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-dark-bg dark:hover:text-white'
                       }`}
                     >
                       {link.label}

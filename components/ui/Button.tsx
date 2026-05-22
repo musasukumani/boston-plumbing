@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import { ReactNode } from 'react'
 
 interface ButtonProps {
   children: ReactNode
-  variant?: 'gold' | 'navy' | 'brick' | 'ink' | 'outline-white' | 'outline-navy'
+  variant?: 'gold' | 'navy' | 'brick' | 'dark-bg' | 'outline-white' | 'outline-navy'
   href?: string
   onClick?: () => void
   type?: 'button' | 'submit'
@@ -28,11 +28,11 @@ export default function Button({
 
   const variants = {
     gold: 'bg-brick text-white hover:bg-brick/90 focus:ring-brick',
-    navy: 'bg-ink text-white hover:bg-ink/90 focus:ring-ink',
+    navy: 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',
     brick: 'bg-brick text-white hover:bg-brick/90 focus:ring-brick',
-    ink: 'bg-ink text-white hover:bg-ink/90 focus:ring-ink',
+    ink: 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',
     'outline-white': 'border-2 border-white/60 text-white hover:border-white hover:bg-white/10 focus:ring-white',
-    'outline-navy': 'border-2 border-ink text-ink hover:bg-ink hover:text-white focus:ring-ink',
+    'outline-navy': 'border-2 border-dark-bg text-dark-bg hover:bg-dark-bg hover:text-white focus:ring-dark-bg',
   }
 
   const classes = `${base} ${variants[variant]} ${className}`
