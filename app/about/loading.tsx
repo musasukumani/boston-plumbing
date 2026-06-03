@@ -4,7 +4,7 @@ export default function Loading() {
       {/* PageHero skeleton */}
       <div
         className="w-full flex flex-col items-center justify-center gap-4 px-4"
-        style={{ height: 280, backgroundColor: '#1B2F4E' }}
+        style={{ height: 280, backgroundColor: 'var(--navy)' }}
       >
         <div className="h-4 w-20 bg-white/10 rounded" />
         <div className="h-9 w-64 bg-white/10 rounded" />

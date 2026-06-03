@@ -27,7 +27,7 @@ export default function Button({
     'inline-flex items-center justify-center gap-2 font-bold rounded-md px-6 py-3 text-sm tracking-wide transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed'
 
   const variants = {
-    gold: 'bg-brick text-white hover:bg-brick/90 focus:ring-brick',
+    gold: 'bg-gold text-white hover:bg-gold/90 focus:ring-gold',
     navy: 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',
     brick: 'bg-brick text-white hover:bg-brick/90 focus:ring-brick',
     ink: 'bg-dark-bg text-white hover:bg-dark-bg/90 focus:ring-dark-bg',

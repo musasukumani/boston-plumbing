@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <div className="animate-pulse">
       {/* Hero skeleton — full viewport height, navy */}
-      <div className="w-full h-screen" style={{ backgroundColor: '#1B2F4E' }}>
+      <div className="w-full h-screen" style={{ backgroundColor: 'var(--navy)' }}>
         <div className="flex flex-col items-center justify-center h-full gap-6 px-4">
           <div className="h-6 w-32 bg-white/10 rounded" />
           <div className="h-14 w-2/3 max-w-xl bg-white/10 rounded" />

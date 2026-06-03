@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import HeroSection from '@/components/home/HeroSection'
 import TrustBar from '@/components/home/TrustBar'
 import ServicesSnapshot from '@/components/home/ServicesSnapshot'
+import HowItWorks from '@/components/home/HowItWorks'
 import WhyUs from '@/components/home/WhyUs'
 import ReviewsCarousel from '@/components/home/ReviewsCarousel'
 import StatsCounter from '@/components/home/StatsCounter'
@@ -64,6 +65,7 @@ export default function HomePage() {
       />
       <HeroSection />
       <TrustBar />
+      <HowItWorks />
       <ServicesSnapshot />
       <WhyUs />
       <ReviewsCarousel />

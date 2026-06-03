@@ -53,7 +53,7 @@ export default function AboutPage() {
               <div
                 key={v.title}
                 className="p-8 rounded-xl border border-gray-100 shadow-sm border-l-4"
-                style={{ borderLeftColor: '#E8A020' }}
+                style={{ borderLeftColor: 'var(--gold)' }}
               >
                 <div className="text-3xl mb-4">{v.icon}</div>
                 <h3 className="font-extrabold text-navy text-xl mb-3">{v.title}</h3>

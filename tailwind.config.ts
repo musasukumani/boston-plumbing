@@ -10,17 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: '#1B2F4E',
-        gold: '#E8A020',
-        ink: '#0F1C2E',
-        brick: '#BF4E22',
-        cream: '#F5EFE6',
-        'light-bg': '#F5EFE6',
-        'brand-text': '#0F1C2E',
-        emergency: '#D94F3D',
-        'dark-bg': '#0F1C2E',
-        'dark-surface': '#162436',
-        'dark-border': '#1E3050',
+        navy: '#0B3D91',
+        gold: '#4AA3FF',
+        ink: '#4A5568',
+        brick: '#FF9E2C',
+        cream: '#FFFFFF',
+        'light-bg': '#FFFFFF',
+        'brand-text': '#4A5568',
+        emergency: '#FF9E2C',
+        'dark-bg': '#0B3D91',
+        'dark-surface': '#0A3579',
+        'dark-border': '#08427B',
       },
       fontFamily: {
         display: ['var(--font-display)', 'Georgia', 'serif'],

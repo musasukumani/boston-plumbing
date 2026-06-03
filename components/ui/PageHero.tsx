@@ -10,7 +10,7 @@ export default function PageHero({ title, subtitle, breadcrumb }: PageHeroProps)
   return (
     <section
       className="relative flex items-center diagonal-texture"
-      style={{ minHeight: 280, backgroundColor: '#0F1C2E' }}
+      style={{ minHeight: 280, backgroundColor: 'var(--navy)' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {breadcrumb && (

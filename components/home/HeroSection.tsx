@@ -22,9 +22,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-dark-bg/50 dark:text-white/50 text-xs font-semibold tracking-[0.2em] uppercase mb-8"
+          className="text-dark-bg/50 dark:text-white/50 text-xs font-semibold tracking-[0.2em] uppercase mb-4"
         >
-          Licensed &amp; Insured &mdash; Boston, MA
+          Licensed &amp; Insured — Boston, MA • 24/7 Emergency Service
         </motion.p>
 
         <motion.h1
@@ -34,39 +34,79 @@ export default function HeroSection() {
           className="font-display text-dark-bg dark:text-white mb-8"
           style={{ fontSize: 'clamp(3rem, 5vw, 5.5rem)', lineHeight: 1.0 }}
         >
-          When a pipe<br />
-          <em>can&apos;t wait.</em>
+          Boston&apos;s Most Trusted<br />
+          <em>Plumbers on Call Now.</em>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.42 }}
-          className="text-dark-bg/70 dark:text-white/70 mb-10"
-          style={{ fontSize: 'clamp(1rem, 1.4vw, 1.1rem)', maxWidth: '38ch', lineHeight: 1.75 }}
+          className="text-dark-bg/70 dark:text-white/70 mb-6"
+          style={{ fontSize: 'clamp(1rem, 1.4vw, 1.1rem)', maxWidth: '46ch', lineHeight: 1.75 }}
         >
-          Same-day service across Boston. Upfront quotes, no surprises. Real plumbers available any hour.
+          Stop leaks, restore hot water, and prevent flood damage with same-day plumbing service in Back Bay, South End, Fenway, Dorchester, and Cambridge.
         </motion.p>
+
+        <motion.div
+          className="mb-8 flex flex-wrap items-center gap-3"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <span className="inline-flex items-center gap-2 rounded-full bg-navy/10 text-navy px-3 py-2 text-xs font-semibold">
+            <span>⭐ 4.9 Google rating</span>
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-full bg-gold/15 text-gold px-3 py-2 text-xs font-semibold">
+            <span>500+ verified reviews</span>
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-full bg-brick/10 text-brick px-3 py-2 text-xs font-semibold">
+            <span>Fast response across Boston</span>
+          </span>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.56 }}
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row flex-wrap gap-4"
         >
           <a
             href="tel:6175550192"
             className="inline-flex items-center justify-center gap-3 bg-brick text-white font-bold text-base px-8 py-4 rounded-md hover:bg-brick/90 transition-colors cursor-pointer"
+            aria-label="Call Boston Plumbing now"
           >
             <PhoneIcon />
-            (617) 555-0192
+            Call Now
           </a>
           <Link
-            href="/services"
-            className="inline-flex items-center justify-center border-2 border-dark-bg/40 text-dark-bg dark:border-white/50 dark:text-white font-semibold text-base px-8 py-4 rounded-md hover:border-dark-bg dark:hover:border-white hover:bg-dark-bg/10 dark:hover:bg-white/10 transition-colors"
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 bg-gold text-white font-semibold text-base px-8 py-4 rounded-md hover:bg-gold/90 transition-colors"
           >
-            Our Services
+            Get a Free Quote
           </Link>
+          <Link
+            href="/services"
+            className="inline-flex items-center justify-center gap-2 rounded-md border border-slate-300/80 bg-white text-dark-bg font-semibold text-base px-8 py-4 hover:bg-slate-100 transition-colors dark:border-white/10 dark:bg-slate-900 dark:text-white dark:hover:bg-white/5"
+          >
+            View Our Services
+          </Link>
+        </motion.div>
+
+        <motion.div
+          className="mt-10 grid gap-2 text-sm text-dark-bg/70 dark:text-white/70"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.68 }}
+        >
+          <p className="font-semibold text-dark-bg dark:text-white">Serving these Boston neighborhoods:</p>
+          <div className="flex flex-wrap gap-3">
+            {['Back Bay', 'South End', 'Fenway', 'Dorchester', 'Cambridge'].map((area) => (
+              <span key={area} className="rounded-full border border-gray-200 dark:border-white/15 px-3 py-1 bg-white dark:bg-slate-950 text-xs text-dark-bg dark:text-white">
+                {area}
+              </span>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div

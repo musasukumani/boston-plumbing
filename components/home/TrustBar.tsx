@@ -51,7 +51,7 @@ const items = [
   {
     icon: <BadgeIcon />,
     label: 'MA Licensed',
-    sub: 'License #BP-MA-00421',
+    sub: 'Master Plumber coverage in Boston',
   },
   {
     icon: <ClockIcon />,

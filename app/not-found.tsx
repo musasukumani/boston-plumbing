@@ -11,7 +11,7 @@ export default function NotFound() {
       {/* Navy top section */}
       <div
         className="flex flex-col items-center justify-center gap-6 px-4 text-center"
-        style={{ minHeight: '50vh', backgroundColor: '#1B2F4E' }}
+        style={{ minHeight: '50vh', backgroundColor: 'var(--navy)' }}
       >
         {/* Wrench icon */}
         <svg
@@ -20,7 +20,7 @@ export default function NotFound() {
           height="56"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#E8A020"
+          stroke="var(--gold)"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -32,7 +32,7 @@ export default function NotFound() {
         {/* 404 */}
         <p
           className="font-bold leading-none"
-          style={{ fontSize: 'clamp(5rem, 20vw, 9rem)', color: '#E8A020' }}
+          style={{ fontSize: 'clamp(5rem, 20vw, 9rem)', color: 'var(--gold)' }}
         >
           404
         </p>
@@ -57,8 +57,8 @@ export default function NotFound() {
             href="/"
             className="inline-block rounded-lg px-8 py-3 text-base font-semibold transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2"
             style={{
-              backgroundColor: '#E8A020',
-              color: '#1B2F4E',
+              backgroundColor: 'var(--gold)',
+              color: 'var(--navy)',
             }}
           >
             Back to Home
@@ -68,8 +68,8 @@ export default function NotFound() {
             href="/contact"
             className="inline-block rounded-lg border-2 px-8 py-3 text-base font-semibold transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2"
             style={{
-              borderColor: '#1B2F4E',
-              color: '#1B2F4E',
+              borderColor: 'var(--navy)',
+              color: 'var(--navy)',
             }}
           >
             Contact Us

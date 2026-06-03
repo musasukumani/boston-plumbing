@@ -20,7 +20,7 @@ export default function EmergencyBanner() {
   return (
     <div
       className="relative z-50 flex items-center justify-center gap-2.5 px-4 py-2 text-white text-sm font-medium"
-      style={{ backgroundColor: '#D94F3D' }}
+      style={{ backgroundColor: 'var(--emergency)' }}
     >
       <a
         href="tel:6175550192"

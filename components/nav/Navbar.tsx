@@ -18,10 +18,10 @@ function BPBadge() {
   return (
     <span
       className="inline-flex items-center justify-center w-8 h-8 rounded-sm flex-shrink-0"
-      style={{ backgroundColor: '#0F1C2E' }}
+      style={{ backgroundColor: 'var(--navy)' }}
       aria-hidden="true"
     >
-      <span className="font-display font-normal text-sm leading-none" style={{ color: '#BF4E22' }}>BP</span>
+      <span className="font-display font-normal text-sm leading-none" style={{ color: 'var(--gold)' }}>BP</span>
     </span>
   )
 }

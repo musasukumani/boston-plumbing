@@ -53,7 +53,7 @@ export default function BeforeAfterSlider({ beforeSrc, afterSrc, beforeAlt, afte
       </div>
       <div
         ref={containerRef}
-        className="relative select-none cursor-col-resize focus:outline-none focus:ring-2 focus:ring-[#E8A020] focus:ring-offset-2"
+        className="relative select-none cursor-col-resize focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
         style={{ height: 300 }}
         tabIndex={0}
         role="slider"

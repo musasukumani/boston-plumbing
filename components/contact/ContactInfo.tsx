@@ -35,7 +35,7 @@ function ClockIcon() {
 
 function ZapIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF4E22" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brick)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
     </svg>
   )
@@ -44,7 +44,7 @@ function ZapIcon() {
 export default function ContactInfo() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="rounded-xl p-8 text-white" style={{ backgroundColor: '#0F1C2E' }}>
+      <div className="rounded-xl p-8 text-white" style={{ backgroundColor: 'var(--navy)' }}>
         <h3 className="font-display font-normal text-xl mb-6">Contact Information</h3>
         <ul className="space-y-5 text-sm">
           <li className="flex items-start gap-4">

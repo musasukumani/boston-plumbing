@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/nav/Navbar'
 import Footer from '@/components/nav/Footer'
 import EmergencyBanner from '@/components/nav/EmergencyBanner'
+import StickyContactBar from '@/components/ui/StickyContactBar'
 import ThemeProvider from '@/components/providers/ThemeProvider'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -45,12 +46,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${dmSerifDisplay.variable} ${dmSans.variable}`} suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col dark:bg-[#0F1C2E] dark:text-gray-100">
+      <body className="min-h-screen flex flex-col dark:bg-dark-bg dark:text-gray-100">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <EmergencyBanner />
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <StickyContactBar />
           <Analytics />
           <SpeedInsights />
         </ThemeProvider>
